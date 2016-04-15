@@ -3,7 +3,7 @@
 $count = 0;
 $min = 1;
 $max = 100;
-$random_number = rand($min , $max);
+$random_number = mt_rand($min , $max);
 
 echo "Guess a number between 1-100\n";
 
