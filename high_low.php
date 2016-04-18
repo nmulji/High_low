@@ -1,10 +1,15 @@
 <?php
 
-if ($argc == 3) {
+$areArgumentsNumberic = ctype_digit($argv[1]) && ctype_digit($argv[2]);
+
+if ($argc == 3 && ($argv[1] < $argv[2]) && $areArgumentsNumberic) {
 
 $min = $argv[1];
 $max = $argv[2];
 
+} else {
+	echo "Enter your arguments properly!!\n";
+	exit(0);
 }
 
 
