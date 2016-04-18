@@ -1,7 +1,11 @@
 <?php
 
-$min = 1;
-$max = 100;
+if ($argc == 3) {
+
+$min = $argv[1];
+$max = $argv[2];
+
+}
 
 
 do {
