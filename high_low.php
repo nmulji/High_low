@@ -16,7 +16,7 @@ $max = $argv[2];
 do {
 	$count = 0;
 	$random_number = mt_rand($min , $max);
-	echo "Guess a number between 1-100\n";
+	echo "Guess a number between $min-$max\n";
 
 	do {
 		fwrite(STDOUT, "What's your guess?\n");
